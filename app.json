@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "quiz-infantil-cch",
-    "slug": "quiz",
+    "name": "Sabichão",
+    "slug": "sabichao",
     "privacy": "public",
     "sdkVersion": "35.0.0",
     "platforms": [
@@ -10,12 +10,11 @@
       "web"
     ],
     "version": "1.0.0",
-    "orientation": "portrait",
+    "orientation": "landscape",
     "icon": "./assets/icon.png",
     "splash": {
       "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "resizeMode": "contain"
     },
     "updates": {
       "fallbackToCacheTimeout": 0

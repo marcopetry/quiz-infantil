@@ -15,7 +15,7 @@ const Routes = createAppContainer(
     Temas: {
       screen: Temas,
       navigationOptions: {
-        title: 'Quiz',
+        title: 'Sabichão',
       },
     },
   }, {

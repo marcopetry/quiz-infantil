@@ -12,7 +12,7 @@ import logo from '../assets/logo.png';
 export default function Inicio({ navigation }) {
 
   function handleJogar() {
-    navigation.navigate('Temas');  
+    navigation.navigate('TelaTemas');  
   }
 
   return (

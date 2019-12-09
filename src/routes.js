@@ -3,6 +3,7 @@ import { createStackNavigator } from 'react-navigation-stack';
 
 import Temas from './pages/Temas';
 import Inicio from './pages/Inicio';
+import TelamTemas from './pages/TelaTemas';
 
 const Routes = createAppContainer(
   createStackNavigator({
@@ -17,6 +18,12 @@ const Routes = createAppContainer(
       navigationOptions: {
         title: 'Sabichão',
       },
+    },
+    TelaTemas: {
+      screen: TelamTemas,
+      navigationOptions: {
+        title: 'Temas'
+      }
     },
   }, {
     defaultNavigationOptions: {

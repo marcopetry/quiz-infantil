@@ -5,6 +5,10 @@ import { ScrollView } from 'react-native-gesture-handler';
 
 export default function Perguntas(props) {
 
+    function escolheuResposta(resposta, id){
+        props.passarPergunta();
+    }
+
     return (
         <ImageBackground source={fundo} style={{ width: '100%', height: '100%' }}>
             <ScrollView>
@@ -13,9 +17,9 @@ export default function Perguntas(props) {
                         <Text style={[styles.text, styles.header]}>Pergunta 1:</Text>
                         <Text style={styles.text}>{props.enunciado}</Text>
                     </View>
-                    <View style={styles.viewText}>
+                    <View style={styles.viewText} onPress={escolheuResposta}>
                         <Text style={[styles.text, styles.header]}>Alternativa 1:</Text>
-                        <Text style={styles.text} onPress={() => props.passarPergunta()}>{props.alternativa[0]}</Text>
+                        <Text style={styles.text} >{props.alternativa[0]}</Text>
                     </View>
                     <View style={styles.viewText}>
                         <Text style={[styles.text, styles.header]}>Alternativa 2:</Text>

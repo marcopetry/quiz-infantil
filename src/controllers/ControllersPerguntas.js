@@ -12,7 +12,6 @@ export default function ControllersPerguntas({ navigation }){
 
     useEffect(() => {   
         setAlternativas(sortearRespostas(questoes.questoes[indicesQuestoes[contador]].alternativas));
-
     }, [contador]);
 
     return (

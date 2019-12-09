@@ -1,0 +1,106 @@
+[
+	{
+		"enunciado": "Na frase: Professores resolvem e comentam as questões do 1º dia do Enem., a palavra 'e' classifica-se em",
+		"alternativas": [
+			"conjunção", "preposição", "interjeição", "verbo", "numeral", "substantivo", "pronome", "algarismo"
+		]
+	},
+	
+	{
+		"enunciado": "Complete as lacunas com o pronome adequado: 1) “_____ documento que tens à mão é importante, Pedrinho? 2) “A 			estrada do mar, larga e oscilante, _______ sim, o tentava.” 3) “Na traseira do caminhão lia-se ________ frase:Tristeza não paga 		dívida”. 4) “Cuidado, mergulhador, ________ animais são venenosos: a arraia miúda, o peixe-escorpião, a medusa, o mangangá.”	",
+		"alternativas": [
+			"Esse – essa – esta – estes", "Este – esta – esta – estes", "Este – esta – essa – esses", "Esse – essa – essa – esses", "Aquele - aquela - aquela - aqueles", "Esse – essa - aquela - aqueles", "Este – esta - aquela - aqueles", "Este – esta – essa – esses"
+		]
+	},
+	
+	{
+		"enunciado": "O Ministro informou que iria resistir _____ pressões contrárias _____ modificações relativas _____ aquisição da casa própria.",
+		"alternativas": [
+			"às - àquelas - à", "às - aquelas - a", "as - àquelas - à", "às - aquelas - à", "as - aquelas - a", "as - àquelas - a", "as - essas - a", "às - essa - à"
+		]
+	},
+	
+	{
+		"enunciado": "Das palavras abaixo, qual não é verbo?",
+		"alternativas": [
+			"Rocha", "Pedirá", "Escrito", "Racha", "Amaste", "Pedra", "Lareira", "Cavalo"
+		]
+	},
+	
+	{
+		"enunciado": "Das palavras destacadas (em maiúsculas), todas são advérbios ou locuções adverbiais, exceto:",
+		"alternativas": [
+			"Precisamos de MEIA folha.", "Giovana NÃO viajou.", "PELA MANHÃ, comi um pão de queijo.", "Estou MEIO gordo.", "FINALMENTE comprei um carro.", "Carlos NÃO viajou.", "PELA MANHÃ, comi um bolo.", "FINALMENTE você chegou"
+		]
+	},
+	
+	{
+		"enunciado": "Das frases abaixo, o uso da posição de pronome está correto, de acordo com a variedade padrão da língua, menos:",
+		"alternativas": [
+			"Direi-vós o testamento.", "Passe-me o sal.", "Quando nos casamos, choveu.", "Não se iluda.", "Decifra-me ou devoro-te.", "Passe-me a água.", "Não se prejudique.", "Quando nos separamos, choveu."
+		]
+	},
+	
+	{
+		"enunciado": "Dos verbos abaixo, qual é anômalo?",
+		"alternativas": [
+			"Ser", "Estar", "Ficar", "Parecer", "Medir", "Amar", "Aparecer", "Abaixar"
+		]
+	},
+	
+	{
+		"enunciado": "Das palavras destacadas (em maiúsculas), qual não é interjeição?",
+		"alternativas": [
+			"O GOL foi anulado.", "CRUZ CREDO! Que notícia horrorosa!", "Preciso de sua ajuda, PELO AMOR DE DEUS!", "CALMA, não fique nervosa!", "AH, se eu pudesse, cavaria o buraco para me esconder.", "A TRAVE caiu.", "O CAMPO molhou.", "A BOLA furou."
+		]
+	},
+	
+	{
+		"enunciado": "Qual das frases abaixo é antítese?",
+		"alternativas": [
+			"Onde há amor há ódio.", "Estou ardendo de frio!", "Se você não ficar feliz, fico triste.", "Muito bonito, hein? Machucou seu irmãozinho!", "Essa comida está tão horrorosa que vou devorar!", "Estou tremendo de frio.", "Se você fica triste, eu não fico feliz.", "Estou ardendo de calor."
+		]
+	},
+	
+	{
+		"enunciado": "As palavras 'CABRUM, BUM, POF, TIQUE-TAQUE e DING DONG' são:",
+		"alternativas": [
+			"onomatopeias", "conjunções", "interjeições", "estrangeiras", "nenhuma das alternativas anteriores.", "plural.", "sinônimos.", "verbos."
+		]
+	},
+	
+	{
+		"enunciado": "Esse caderno é imprestável, por isso não irei emprestar. Nesse período, onde há erro?",
+		"alternativas": [
+			"imprestável", "irei", "Esse", "caderno", "O período está correto.", "isso.", "período.", "há."
+		]
+	},
+	
+	{
+		"enunciado": "O feminino de judeu é:",
+		"alternativas": [
+			"Judia", "Jade", "Judeia", "Judeaia", "Jossa", "Jussimara", "Joquei", "Judite"
+		]
+	},
+	
+	{
+		"enunciado": "O plural de alemão é:",
+		"alternativas": [
+			"Alemães", "Alemões", "Alemãos", "Alemoas", "Alemais", "Alens", "Alemas", "Alemos"
+		]
+	},
+	
+	{
+		"enunciado": "A frase 'Chantagearam-se Mariana' está na voz:",
+		"alternativas": [
+			"Passiva sintética.", "Reflexiva.", "Passiva analítica.", "Ativa.", "Nenhuma das alternativas anteriores.", "Analítica", "Passiva", "Verbo"
+		]
+	},
+	
+	{
+		"enunciado": "O plural de pão é:",
+		"alternativas": [
+			"Pães", "Pãos", "Pas", "Pos", "Cacetinhos", "Pazãos", "Pãozes", "Pãozãos"
+		]
+	},
+]

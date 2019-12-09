@@ -6,13 +6,13 @@ import portugues from '../assets/icon-portugues.png';
 import historia from '../assets/icon-historia.png';
 import quimica from '../assets/icon-quimica.png';
 
-export default function TelamTemas() {
+export default function TelamTemas({navigation}) {
 
     return (
         <ScrollView style={styles.scroll}>
             <View style={styles.container}>
                 <View style={styles.viewsIcons}>
-                    <TouchableOpacity>
+                    <TouchableOpacity onPress={() => navigation.navigate('Perguntas')}>
                         <View style={styles.viewImage}>
                             <Image source={portugues} style={styles.image}/>
                             <Text>Português</Text>

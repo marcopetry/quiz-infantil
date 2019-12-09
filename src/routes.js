@@ -4,13 +4,15 @@ import { createStackNavigator } from 'react-navigation-stack';
 import Temas from './pages/Temas';
 import Inicio from './pages/Inicio';
 import TelamTemas from './pages/TelaTemas';
+import Perguntas from './pages/Perguntas';
 
 const Routes = createAppContainer(
   createStackNavigator({
     Inicio: {
-      screen: Inicio,
+      screen: Perguntas,
       navigationOptions: {
-        header: null,
+        //header: null,
+        title: 'Perguntas'
       },
     },
     Temas: {
@@ -25,6 +27,12 @@ const Routes = createAppContainer(
         title: 'Temas'
       }
     },
+    Perguntas: {
+      screen: Perguntas,
+      navigationOptions: {
+        title: 'Perguntas'
+      }
+    }
   }, {
     defaultNavigationOptions: {
       headerTintColor: '#FFF',

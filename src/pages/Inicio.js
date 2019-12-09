@@ -11,6 +11,10 @@ import logo from '../assets/logo.png';
 
 export default function Inicio({ navigation }) {
 
+  Font.loadAsync({
+      'Roboto-Light': require('../../assets/fonts/Roboto-Light.ttf'),
+  });
+
   function handleJogar() {
     navigation.navigate('TelaTemas');  
   }

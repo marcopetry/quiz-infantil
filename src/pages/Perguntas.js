@@ -1,35 +1,33 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Text, ImageBackground, View, StyleSheet } from 'react-native';
 import fundo from '../assets/backgroundInicio.png';
 import { ScrollView } from 'react-native-gesture-handler';
-import * as Font from 'expo-font';
 
-export default function Pergutas() {
-
+export default function Perguntas(props) {
 
     return (
         <ImageBackground source={fundo} style={{ width: '100%', height: '100%' }}>
             <ScrollView>
                 <View style={styles.container}>
-                    <View style={styles.viewText}>
+                    <View style={styles.viewText} >
                         <Text style={[styles.text, styles.header]}>Pergunta 1:</Text>
-                        <Text style={styles.text}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</Text>
+                        <Text style={styles.text}>{props.enunciado}</Text>
                     </View>
                     <View style={styles.viewText}>
                         <Text style={[styles.text, styles.header]}>Alternativa 1:</Text>
-                        <Text style={styles.text}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</Text>
+                        <Text style={styles.text} onPress={() => props.passarPergunta()}>{props.alternativa[0]}</Text>
                     </View>
                     <View style={styles.viewText}>
                         <Text style={[styles.text, styles.header]}>Alternativa 2:</Text>
-                        <Text style={styles.text}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</Text>
+                        <Text style={styles.text}>{props.alternativa[1]}</Text>
                     </View>
                     <View style={styles.viewText}>
                         <Text style={[styles.text, styles.header]}>Alternativa 3:</Text>
-                        <Text style={styles.text}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</Text>
+                        <Text style={styles.text}>{props.alternativa[2]}</Text>
                     </View>
                     <View style={styles.viewText}>
                         <Text style={[styles.text, styles.header]}>Alternativa 4:</Text>
-                        <Text style={styles.text}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</Text>
+                        <Text style={styles.text}>{props.alternativa[3]}</Text>
                     </View>
                 </View>
             </ScrollView>

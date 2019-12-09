@@ -1,4 +1,5 @@
-[
+{
+	"questoes": [
 	{
 		"enunciado": "Na frase: Professores resolvem e comentam as questões do 1º dia do Enem., a palavra 'e' classifica-se em",
 		"alternativas": [
@@ -104,3 +105,4 @@
 		]
 	},
 ]
+}

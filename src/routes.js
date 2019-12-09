@@ -5,14 +5,14 @@ import Temas from './pages/Temas';
 import Inicio from './pages/Inicio';
 import TelamTemas from './pages/TelaTemas';
 import Perguntas from './pages/Perguntas';
+import ControllersPerguntas from './controllers/ControllersPerguntas';
 
 const Routes = createAppContainer(
   createStackNavigator({
     Inicio: {
-      screen: Perguntas,
+      screen: Inicio,
       navigationOptions: {
-        //header: null,
-        title: 'Perguntas'
+        header: null,
       },
     },
     Temas: {
@@ -28,7 +28,7 @@ const Routes = createAppContainer(
       }
     },
     Perguntas: {
-      screen: Perguntas,
+      screen: ControllersPerguntas,
       navigationOptions: {
         title: 'Perguntas'
       }

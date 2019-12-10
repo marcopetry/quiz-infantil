@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { View } from 'react-native';
 import Perguntas from '../pages/Perguntas';
 import { sortearQuestoes } from '../helpers/sortearQuestoes';
 import { sortearRespostas } from '../helpers/sortearRespostas';
@@ -28,21 +29,18 @@ export default function ControllersPerguntas({ navigation }) {
     }, [contador]);
 
     if (contador === 5) {
-        return navigation.navigate('Scores');
-    }
-    else {
-        return (
-            <Perguntas
-                enunciado={questoes.questoes[indicesQuestoes[contador]].enunciado}
-                alternativa={alternativas}
-                correta={questoes.questoes[indicesQuestoes[contador]].alternativas[0]}
-                passarPergunta={() => setContador(contador + 1)}
-                adicionarPontoRespostaCorreta={() => setTotalRespostasCorretas(totalRespostasCorretas + 1)}
-                contador={contador}
-            />
-        );
-
+        return <Scores navigation={navigation} />
     }
 
+    return (
+        <Perguntas
+            enunciado={questoes.questoes[indicesQuestoes[contador]].enunciado}
+            alternativa={alternativas}
+            correta={questoes.questoes[indicesQuestoes[contador]].alternativas[0]}
+            passarPergunta={() => setContador(contador + 1)}
+            adicionarPontoRespostaCorreta={() => setTotalRespostasCorretas(totalRespostasCorretas + 1)}
+            contador={contador}
+        />
+    );
 }
 

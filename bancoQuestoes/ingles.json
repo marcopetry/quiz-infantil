@@ -3,209 +3,195 @@
         {
             "enunciado": "Tradução de azul.",
             "alternativas": [
-                "Blue.", 
-                "Pink.", 
-                "Yellow.", 
-                "Green.", 
-                "Brown.", 
-                "Gray.", 
-                "Orange.", 
+                "Blue.",
+                "Pink.",
+                "Yellow.",
+                "Green.",
+                "Brown.",
+                "Gray.",
+                "Orange.",
                 "Purple."
             ]
         },
-
         {
             "enunciado": "Tradução de batata.",
             "alternativas": [
-                "Potato.", 
-                "Carrot.", 
-                "Tomato.", 
-                "Lettuce.", 
-                "Cabbage.", 
-                "Onion.", 
-                "Garlic.", 
+                "Potato.",
+                "Carrot.",
+                "Tomato.",
+                "Lettuce.",
+                "Cabbage.",
+                "Onion.",
+                "Garlic.",
                 "Strawberry."
             ]
         },
-
         {
             "enunciado": "Complete a frade 'What's ------ name?'.",
             "alternativas": [
-                "Your.", 
-                "You.", 
-                "I.", 
-                "We.", 
-                "He.", 
-                "She.", 
-                "It.", 
+                "Your.",
+                "You.",
+                "I.",
+                "We.",
+                "He.",
+                "She.",
+                "It.",
                 "Is."
             ]
         },
-
         {
             "enunciado": "Tradução de nós.",
             "alternativas": [
-                "We.", 
-                "You.", 
-                "Me.", 
-                "They.", 
-                "He.", 
-                "She.", 
-                "It.", 
+                "We.",
+                "You.",
+                "Me.",
+                "They.",
+                "He.",
+                "She.",
+                "It.",
                 "The."
             ]
         },
-
         {
             "enunciado": "Tradução de eu.",
             "alternativas": [
-                "I.", 
-                "You.", 
-                "Me.", 
-                "They.", 
-                "He.", 
-                "She.", 
-                "It.", 
+                "I.",
+                "You.",
+                "Me.",
+                "They.",
+                "He.",
+                "She.",
+                "It.",
                 "The."
             ]
         },
-
         {
             "enunciado": "Tradução de porta.",
             "alternativas": [
-                "Door.", 
-                "Chair.", 
-                "Sofa.", 
-                "Armchair.", 
-                "Door Handle.", 
-                "Wood.", 
-                "Portal.", 
+                "Door.",
+                "Chair.",
+                "Sofa.",
+                "Armchair.",
+                "Door Handle.",
+                "Wood.",
+                "Portal.",
                 "Gate."
             ]
         },
-
         {
             "enunciado": "Tradução de rosa.",
             "alternativas": [
                 "Pink.",
-                "Blue.",  
-                "Yellow.", 
-                "Green.", 
-                "Brown.", 
-                "Gray.", 
-                "Orange.", 
+                "Blue.",
+                "Yellow.",
+                "Green.",
+                "Brown.",
+                "Gray.",
+                "Orange.",
                 "Purple."
             ]
         },
-
         {
             "enunciado": "Tradução de amarelo.",
             "alternativas": [
                 "Yellow.",
                 "Pink.",
-                "Blue.",   
-                "Green.", 
-                "Brown.", 
-                "Gray.", 
-                "Orange.", 
+                "Blue.",
+                "Green.",
+                "Brown.",
+                "Gray.",
+                "Orange.",
                 "Purple."
             ]
         },
-
         {
             "enunciado": "Tradução de tomate.",
             "alternativas": [
                 "Tomato.",
-                "Potato.", 
-                "Carrot.", 
-                "Lettuce.", 
-                "Cabbage.", 
-                "Onion.", 
-                "Garlic.", 
+                "Potato.",
+                "Carrot.",
+                "Lettuce.",
+                "Cabbage.",
+                "Onion.",
+                "Garlic.",
                 "Strawberry."
             ]
         },
-
         {
             "enunciado": "Tradução de vida.",
             "alternativas": [
                 "Life.",
-                "Death.", 
-                "Heaven.", 
-                "Air.", 
-                "Fire.", 
-                "Health.", 
-                "Welfare.", 
+                "Death.",
+                "Heaven.",
+                "Air.",
+                "Fire.",
+                "Health.",
+                "Welfare.",
                 "Sky."
             ]
         },
-
         {
             "enunciado": "Tradução de marrom.",
             "alternativas": [
                 "Brown.",
-                "Blue.", 
-                "Pink.", 
-                "Yellow.", 
-                "Green.",  
-                "Gray.", 
-                "Orange.", 
+                "Blue.",
+                "Pink.",
+                "Yellow.",
+                "Green.",
+                "Gray.",
+                "Orange.",
                 "Purple."
             ]
         },
-
         {
             "enunciado": "Tradução de cadeira.",
             "alternativas": [
                 "Chair.",
-                "Door.", 
-                "Sofa.", 
-                "Armchair.", 
-                "Door Handle.", 
-                "Wood.", 
-                "Portal.", 
+                "Door.",
+                "Sofa.",
+                "Armchair.",
+                "Door Handle.",
+                "Wood.",
+                "Portal.",
                 "Gate."
             ]
         },
-
         {
             "enunciado": "Tradução de papel.",
             "alternativas": [
                 "Paper.",
-                "Notebook.", 
-                "Newspaper.", 
-                "Magazine.", 
-                "Journal.", 
-                "Review.", 
-                "Book.", 
+                "Notebook.",
+                "Newspaper.",
+                "Magazine.",
+                "Journal.",
+                "Review.",
+                "Book.",
                 "Copybook."
             ]
         },
-
         {
             "enunciado": "Tradução de diário.",
             "alternativas": [
                 "Daily.",
-                "Notebook.", 
-                "Newspaper.", 
-                "Magazine.", 
-                "Journal.", 
-                "Review.", 
-                "Book.", 
+                "Notebook.",
+                "Newspaper.",
+                "Magazine.",
+                "Journal.",
+                "Review.",
+                "Book.",
                 "Copybook."
             ]
         },
-
         {
             "enunciado": "Tradução de fogo.",
             "alternativas": [
                 "Fire.",
-                "Death.", 
-                "Heaven.", 
-                "Air.", 
-                "Life.", 
-                "Health.", 
-                "Welfare.", 
+                "Death.",
+                "Heaven.",
+                "Air.",
+                "Life.",
+                "Health.",
+                "Welfare.",
                 "Sky."
             ]
         }

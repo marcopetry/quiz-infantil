@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { View, KeyboardAvoidingView, Image, Text, TouchableOpacity, StyleSheet } from 'react-native';
-
 import logo from '../assets/logo.png';
 
 // Color palette
@@ -22,7 +21,7 @@ export default function Inicio({ navigation }) {
 
   return (
     <KeyboardAvoidingView behavior="padding" style={styles.container}>
-      <Image source={logo} />
+      <Image source={logo} style={styles.image}/>
 
       <View style={styles.content}>
         <TouchableOpacity onPress={handleJogar} style={styles.button}>
@@ -40,14 +39,21 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
 
+  image: {
+    width: 440,
+    height: 130
+  },
+
   content: {
     alignSelf: 'stretch',
-    paddingHorizontal: 100,
+    alignItems: 'center',
+    //paddingHorizontal: 60,
     marginTop: 30,
   },
 
   button: {
     height: 42,
+    width: '80%',
     backgroundColor: '#E65B6B',
     justifyContent: 'center',
     alignItems: 'center',

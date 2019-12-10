@@ -1,12 +1,10 @@
 import React from 'react';
 import { Text, View, Image, StyleSheet, Dimensions } from 'react-native';
 import { ScrollView, TouchableOpacity } from 'react-native-gesture-handler';
-import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen';
-
 import matematica from '../assets/icon-matematica.png';
 import portugues from '../assets/icon-portugues.png';
-import historia from '../assets/icon-historia.png';
-import quimica from '../assets/icon-quimica.png';
+import personagens from '../assets/personagens-icon.png';
+import ingles from '../assets/ingles-icon.png';
 import questoesPortugues from '../../bancoQuestoes/portugues.json';
 import questoesMatematica from '../../bancoQuestoes/matematica.json';
 
@@ -41,14 +39,14 @@ export default function TelaTemas({ navigation }) {
                 <View style={[styles.viewsIcons, {marginTop: marginTopTelaGrande}]}>
                     <TouchableOpacity onPress={() => navigation.navigate('Perguntas', { questoes: questoesPortugues, materia: 'quimica' })}>
                         <View style={styles.viewImage}>
-                            <Image source={quimica} style={styles.image} />
-                            <Text>Química</Text>
+                            <Image source={ingles} style={styles.image} />
+                            <Text>Inglês</Text>
                         </View>
                     </TouchableOpacity>
                     <TouchableOpacity onPress={() => navigation.navigate('Perguntas', { questoes: questoesPortugues, materia: 'historia' })}>
                         <View style={styles.viewImage}>
-                            <Image source={historia} style={styles.image} />
-                            <Text>História</Text>
+                            <Image source={personagens} style={styles.image} />
+                            <Text>Personagens</Text>
                         </View>
                     </TouchableOpacity>
                 </View>
@@ -82,7 +80,8 @@ const styles = StyleSheet.create({
     image: {
         width: 100,
         height: 100,
-        marginBottom: 5
+        marginBottom: 5, 
+        borderWidth: 5
     },
 
 });

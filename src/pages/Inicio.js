@@ -47,7 +47,6 @@ const styles = StyleSheet.create({
   content: {
     alignSelf: 'stretch',
     alignItems: 'center',
-    //paddingHorizontal: 60,
     marginTop: 30,
   },
 

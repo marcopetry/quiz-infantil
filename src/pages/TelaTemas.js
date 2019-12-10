@@ -1,18 +1,29 @@
 import React from 'react';
-import { Text, View, Image, StyleSheet } from 'react-native';
+import { Text, View, Image, StyleSheet, Dimensions } from 'react-native';
 import { ScrollView, TouchableOpacity } from 'react-native-gesture-handler';
+import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen';
 
 import matematica from '../assets/icon-matematica.png';
 import portugues from '../assets/icon-portugues.png';
 import historia from '../assets/icon-historia.png';
 import quimica from '../assets/icon-quimica.png';
 import questoesPortugues from '../../bancoQuestoes/portugues.json';
+import questoesMatematica from '../../bancoQuestoes/matematica.json';
 
+let marginTelaTemas = 5;
+let marginTopTelaGrande = 5;
 export default function TelaTemas({ navigation }) {
+
+    //configura as margens para ficar tudo numa mesma tela bem disposto, em smarthphont ou tv
+    //esses styles estão conifgurados nas views do componente
+    if(Dimensions.get('screen').height > 400){
+        marginTelaTemas = 70;
+        marginTopTelaGrande = 40;
+    }
 
     return (
         <ScrollView>
-            <View style={styles.container}>
+            <View style={[styles.container, {marginVertical: marginTelaTemas}]}>
                 <View style={styles.viewsIcons}>
                     <TouchableOpacity onPress={() => navigation.navigate('Perguntas', { questoes: questoesPortugues, materia: 'portugues' })}>
                         <View style={styles.viewImage}>
@@ -20,14 +31,14 @@ export default function TelaTemas({ navigation }) {
                             <Text>Português</Text>
                         </View>
                     </TouchableOpacity>
-                    <TouchableOpacity onPress={() => navigation.navigate('Perguntas', { questoes: questoesPortugues, materia: ',matematica' })}>
+                    <TouchableOpacity onPress={() => navigation.navigate('Perguntas', { questoes: questoesMatematica, materia: 'matematica' })}>
                         <View style={styles.viewImage}>
                             <Image source={matematica} style={styles.image} />
                             <Text>Matemática</Text>
                         </View>
                     </TouchableOpacity>
                 </View>
-                <View style={styles.viewsIcons}>
+                <View style={[styles.viewsIcons, {marginTop: marginTopTelaGrande}]}>
                     <TouchableOpacity onPress={() => navigation.navigate('Perguntas', { questoes: questoesPortugues, materia: 'quimica' })}>
                         <View style={styles.viewImage}>
                             <Image source={quimica} style={styles.image} />
@@ -52,7 +63,6 @@ const styles = StyleSheet.create({
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'flex-end',
-        //marginVertical: hp('5%')
     },
 
     viewsIcons: {

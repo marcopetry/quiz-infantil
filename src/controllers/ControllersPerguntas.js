@@ -18,6 +18,8 @@ export default function ControllersPerguntas({ navigation }) {
             setAlternativas(sortearRespostas(questoes.questoes[indicesQuestoes[contador]].alternativas));
     }, [contador]);
 
+    console.log(navigation)
+
     if (contador === 5) {
         if (materia === 'portugues')
             global.portugues += totalRespostasCorretas;

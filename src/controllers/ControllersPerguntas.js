@@ -5,13 +5,13 @@ import { sortearQuestoes } from '../helpers/sortearQuestoes';
 import { sortearRespostas } from '../helpers/sortearRespostas';
 import Scores from '../pages/Scores';
 
-const indicesQuestoes = sortearQuestoes();
 export default function ControllersPerguntas({ navigation }) {
     const [questoes, setQuestoes] = useState(navigation.getParam('questoes')),
         [contador, setContador] = useState(0),
         [alternativas, setAlternativas] = useState([]),
         [totalRespostasCorretas, setTotalRespostasCorretas] = useState(0),
-        [materia, setMateria] = useState(navigation.getParam('materia'));
+        [materia, setMateria] = useState(navigation.getParam('materia')), 
+        [indicesQuestoes] = useState(sortearQuestoes());
 
     useEffect(() => {
         if (contador < 5)
@@ -25,7 +25,7 @@ export default function ControllersPerguntas({ navigation }) {
             global.matematica += totalRespostasCorretas;
         else if (materia === 'ingles')
             global.ingles += totalRespostasCorretas;
-        else if (materia === 'historia')
+        else if (materia === 'personagens')
             global.personagens += totalRespostasCorretas;
         return <Scores navigation={navigation} />
     }

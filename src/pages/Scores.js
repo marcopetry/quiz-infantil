@@ -2,11 +2,19 @@ import React from 'react';
 import { View, Text, StyleSheet, ImageBackground } from 'react-native';
 import { TouchableOpacity, ScrollView } from 'react-native-gesture-handler';
 import fundoTela from '../assets/backgroundInicio.png';
+import { NavigationActions } from 'react-navigation';
 
 export default function Scores(props) {
     /* props.navigation.setParams({
         title: 'Scores'
     }); */
+    
+
+    const setParamsAction = NavigationActions.setParams({
+        params: { title: 'Hello' },
+        key: 'screen-123',
+    });
+    props.navigation.dispatch(setParamsAction);
 
     return (
         <ImageBackground source={fundoTela} style={{ width: '100%', height: '100%' }}>

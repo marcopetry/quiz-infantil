@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { View } from 'react-native';
 import Perguntas from '../pages/Perguntas';
 import { sortearQuestoes } from '../helpers/sortearQuestoes';
 import { sortearRespostas } from '../helpers/sortearRespostas';
@@ -11,14 +10,14 @@ export default function ControllersPerguntas({ navigation }) {
         [alternativas, setAlternativas] = useState([]),
         [totalRespostasCorretas, setTotalRespostasCorretas] = useState(0),
         [materia, setMateria] = useState(navigation.getParam('materia')), 
-        [indicesQuestoes] = useState(sortearQuestoes());
+        [indicesQuestoes] = useState(sortearQuestoes(questoes.questoes));
 
     useEffect(() => {
         if (contador < 5)
             setAlternativas(sortearRespostas(questoes.questoes[indicesQuestoes[contador]].alternativas));
     }, [contador]);
 
-    console.log(navigation)
+    console.log(navigation.navigationOptions);
 
     if (contador === 5) {
         if (materia === 'portugues')

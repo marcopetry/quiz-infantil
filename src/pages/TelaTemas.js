@@ -7,21 +7,13 @@ import historia from '../assets/icon-historia.png';
 import quimica from '../assets/icon-quimica.png';
 import questoesPortugues from '../../bancoQuestoes/portugues.json';
 
-
-const placar = {
-    scorePortugues: 0,
-    scoreMatematica: 0,
-    scoreQuimica: 0,
-    scoreHistoria: 0
-}
-
 export default function TelaTemas({navigation}) {
     
     return (
         <ScrollView style={styles.scroll}>
             <View style={styles.container}>
                 <View style={styles.viewsIcons}>
-                    <TouchableOpacity onPress={() => navigation.navigate('Perguntas', {questoes: questoesPortugues, placar, materia: 'portugues'})}>
+                    <TouchableOpacity onPress={() => navigation.navigate('Perguntas', {questoes: questoesPortugues, materia: 'portugues'})}>
                         <View style={styles.viewImage}>
                             <Image source={portugues} style={styles.image}/>
                             <Text>Português</Text>

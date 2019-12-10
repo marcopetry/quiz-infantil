@@ -9,10 +9,15 @@ import logo from '../assets/logo.png';
 // #93E9ED
 // #E65B6B
 
+global.portugues = 0;
+global.matematica = 0;
+global.quimica = 0;
+global.historia = 0;
+
 export default function Inicio({ navigation }) {
 
   function handleJogar() {
-    navigation.navigate('TelaTemas');  
+    navigation.navigate('Temas');  
   }
 
   return (

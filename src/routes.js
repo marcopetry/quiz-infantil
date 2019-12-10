@@ -11,23 +11,17 @@ import Scores from './pages/Scores';
 const Routes = createAppContainer(
   createStackNavigator({
     Inicio: {
-      screen: Scores,
-      //screen: Inicio,
+      //screen: Scores,
+      screen: Inicio,
       navigationOptions: {
-        title: 'Scores'
-        //header: null,
+        //title: 'Scores'
+        header: null,
       },
     },
     Temas: {
-      screen: Temas,
-      navigationOptions: {
-        title: 'Sabichão',
-      },
-    },
-    TelaTemas: {
       screen: TelaTemas,
       navigationOptions: {
-        title: 'Temas'
+        title: 'Sabichão'
       }
     },
     Perguntas: {

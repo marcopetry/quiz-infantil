@@ -21,8 +21,9 @@ export default function ControllersPerguntas({ navigation }) {
     }, [contador]);
 
     if (contador === 5) {
+        global.portugues +=totalRespostasCorretas;
         return (
-            <Scores />
+            <Scores navigation={navigation}/>
         );
     }
 

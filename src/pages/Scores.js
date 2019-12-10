@@ -27,9 +27,11 @@ export default function Scores(props) {
                         <Text>História: </Text>
                         <Text>{global.historia}</Text>
                     </View>
-                    <TouchableOpacity style={styles.button} onPress={() => props.navigation.navigate('Temas')}>
-                        <Text>Início</Text>
-                    </TouchableOpacity>
+                    <View style={styles.viewButton}>
+                        <TouchableOpacity style={styles.button} onPress={() => props.navigation.navigate('Temas')}>
+                            <Text>Início</Text>
+                        </TouchableOpacity>
+                    </View>
                 </View>
             </ScrollView>
         </ImageBackground>
@@ -40,13 +42,14 @@ const styles = StyleSheet.create({
     container: {
         justifyContent: 'center',
         alignItems: 'center',
-        marginTop: 20
+        marginTop: 20,
+        width: '100%'
     },
 
     viewScores: {
         display: 'flex',
         flexDirection: 'row',
-        width: 700,
+        width: '80%',
         justifyContent: 'space-between',
         marginVertical: 15,
         borderWidth: 1,
@@ -58,9 +61,15 @@ const styles = StyleSheet.create({
         fontSize: 50
     },
 
+    viewButton: {
+        width: '80%',
+    },
+
     button: {
         backgroundColor: '#E65B6B',
-        width: 700,
+        display: 'flex',
+        flex: 1,
+        flexShrink: 1,
         height: 40,
         borderRadius: 10,
         justifyContent: 'center',

@@ -11,13 +11,13 @@ export default function Perguntas(props) {
 
     function escolheuResposta(resposta, id) {
         let cor;
-        if(resposta === props.correta){
+        if (resposta === props.correta) {
             props.adicionarPontoRespostaCorreta();
             cor = '#CCFF33';
-        } else{
+        } else {
             cor = '#E65B6B';
         }
-        if(id === 0){
+        if (id === 0) {
             setPrimeiraResposta(cor);
             setTimeout(() => {
                 setPrimeiraResposta('#339BA1');
@@ -26,7 +26,7 @@ export default function Perguntas(props) {
             return;
         }
 
-        if(id === 1){
+        if (id === 1) {
             setSegundaResposta(cor);
             setTimeout(() => {
                 setSegundaResposta('#339BA1');
@@ -35,7 +35,7 @@ export default function Perguntas(props) {
             return;
         }
 
-        if(id === 2){
+        if (id === 2) {
             setTerceiraResposta(cor);
             setTimeout(() => {
                 setTerceiraResposta('#339BA1');
@@ -44,7 +44,7 @@ export default function Perguntas(props) {
             return;
         }
 
-        if(id === 3){
+        if (id === 3) {
             setQuartaResposta(cor);
             setTimeout(() => {
                 setQuartaResposta('#339BA1');
@@ -63,37 +63,33 @@ export default function Perguntas(props) {
                         <Text style={styles.text}>{props.enunciado}</Text>
                     </View>
 
-                    <TouchableOpacity
-                        style={[styles.viewText, { backgroundColor: primeiraResposta }]}
-                        onPress={() => escolheuResposta(props.alternativa[0], 0)}
-                    >
-                        <Text style={[styles.text, styles.header]}>Alternativa 1:</Text>
-                        <Text style={styles.text} >{props.alternativa[0]}</Text>
-                    </TouchableOpacity>
+                    <View style={[styles.viewText, { backgroundColor: primeiraResposta }]} >
+                        <TouchableOpacity onPress={() => escolheuResposta(props.alternativa[0], 0)}>
+                            <Text style={[styles.text, styles.header]}>Alternativa 1:</Text>
+                            <Text style={styles.text} >{props.alternativa[0]}</Text>
+                        </TouchableOpacity>
+                    </View>
 
-                    <TouchableOpacity 
-                        style={[styles.viewText, {backgroundColor: segundaResposta}]}
-                        onPress={() => escolheuResposta(props.alternativa[1], 1)}
-                        >
-                        <Text style={[styles.text, styles.header]}>Alternativa 2:</Text>
-                        <Text style={styles.text}>{props.alternativa[1]}</Text>
-                    </TouchableOpacity>
+                    <View style={[styles.viewText, { backgroundColor: segundaResposta }]}>
+                        <TouchableOpacity onPress={() => escolheuResposta(props.alternativa[1], 1)}>
+                            <Text style={[styles.text, styles.header]}>Alternativa 2:</Text>
+                            <Text style={styles.text}>{props.alternativa[1]}</Text>
+                        </TouchableOpacity>
+                    </View>
 
-                    <TouchableOpacity 
-                        style={[styles.viewText, {backgroundColor: terceiraResposta}]}
-                        onPress={() => escolheuResposta(props.alternativa[2], 2)}
-                        >
-                        <Text style={[styles.text, styles.header]}>Alternativa 3:</Text>
-                        <Text style={styles.text}>{props.alternativa[2]}</Text>
-                    </TouchableOpacity>
+                    <View style={[styles.viewText, { backgroundColor: terceiraResposta }]}>
+                        <TouchableOpacity onPress={() => escolheuResposta(props.alternativa[2], 2)}>
+                            <Text style={[styles.text, styles.header]}>Alternativa 3:</Text>
+                            <Text style={styles.text}>{props.alternativa[2]}</Text>
+                        </TouchableOpacity>
+                    </View>
 
-                    <TouchableOpacity 
-                        style={[styles.viewText, {backgroundColor: quartaResposta}]}
-                        onPress={() => escolheuResposta(props.alternativa[3], 3)}
-                        >
-                        <Text style={[styles.text, styles.header]}>Alternativa 4:</Text>
-                        <Text style={styles.text}>{props.alternativa[3]}</Text>
-                    </TouchableOpacity>
+                    <View style={[styles.viewText, { backgroundColor: quartaResposta }]}>
+                        <TouchableOpacity onPress={() => escolheuResposta(props.alternativa[3], 3)}>
+                            <Text style={[styles.text, styles.header]}>Alternativa 4:</Text>
+                            <Text style={styles.text}>{props.alternativa[3]}</Text>
+                        </TouchableOpacity>
+                    </View>
                 </View>
             </ScrollView>
         </ImageBackground>
@@ -111,7 +107,7 @@ const styles = StyleSheet.create({
     },
 
     viewText: {
-        width: 700,
+        width: '80%',
         backgroundColor: '#339BA1',
         marginVertical: 20,
         borderRadius: 10

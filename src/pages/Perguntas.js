@@ -22,7 +22,7 @@ export default function Perguntas(props) {
             setTimeout(() => {
                 setPrimeiraResposta('#339BA1');
                 props.passarPergunta();
-            }, 700);
+            }, 500);
             return;
         }
 
@@ -31,7 +31,7 @@ export default function Perguntas(props) {
             setTimeout(() => {
                 setSegundaResposta('#339BA1');
                 props.passarPergunta();
-            }, 700);
+            }, 500);
             return;
         }
 
@@ -40,7 +40,7 @@ export default function Perguntas(props) {
             setTimeout(() => {
                 setTerceiraResposta('#339BA1');
                 props.passarPergunta();
-            }, 700);
+            }, 500);
             return;
         }
 
@@ -49,7 +49,7 @@ export default function Perguntas(props) {
             setTimeout(() => {
                 setQuartaResposta('#339BA1');
                 props.passarPergunta();
-            }, 700);
+            }, 500);
             return;
         }
     }
@@ -59,7 +59,7 @@ export default function Perguntas(props) {
             <ScrollView>
                 <View style={styles.container}>
                     <View style={styles.viewText} >
-                        <Text style={[styles.text, styles.header]}>Pergunta 1:</Text>
+                        <Text style={[styles.text, styles.header]}>Pergunta {(props.contador + 1)}:</Text>
                         <Text style={styles.text}>{props.enunciado}</Text>
                     </View>
 

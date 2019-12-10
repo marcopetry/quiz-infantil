@@ -3,9 +3,7 @@ import { createStackNavigator } from 'react-navigation-stack';
 
 import Inicio from './pages/Inicio';
 import TelaTemas from './pages/TelaTemas';
-import Perguntas from './pages/Perguntas';
 import ControllersPerguntas from './controllers/ControllersPerguntas';
-import Scores from './pages/Scores';
 
 const Routes = createAppContainer(
   createStackNavigator({
@@ -29,12 +27,6 @@ const Routes = createAppContainer(
         title: 'Perguntas'
       }
     },
-    Scores: {
-      screen: Scores,
-      navigationOptions: {
-        title: 'Scores'
-      }
-    }
   }, {
     defaultNavigationOptions: {
       headerTintColor: '#FFF',

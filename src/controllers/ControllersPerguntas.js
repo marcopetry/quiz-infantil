@@ -42,6 +42,7 @@ export default function ControllersPerguntas({ navigation }) {
             correta={questoes.questoes[indicesQuestoes[contador]].alternativas[0]}
             passarPergunta={() => setContador(contador + 1)}
             adicionarPontoRespostaCorreta={() => setTotalRespostasCorretas(totalRespostasCorretas + 1)}
+            contador={contador}
         />
     );
 }

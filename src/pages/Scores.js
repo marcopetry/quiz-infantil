@@ -22,12 +22,12 @@ export default function Scores(props) {
                         <Text>{global.matematica}</Text>
                     </View>
                     <View style={styles.viewScores}>
-                        <Text>Química: </Text>
-                        <Text>{global.quimica}</Text>
+                        <Text>Inglês: </Text>
+                        <Text>{global.ingles}</Text>
                     </View>
                     <View style={styles.viewScores}>
-                        <Text>História: </Text>
-                        <Text>{global.historia}</Text>
+                        <Text>Personagens: </Text>
+                        <Text>{global.personagens}</Text>
                     </View>
                     <View style={styles.viewButton}>
                         <TouchableOpacity style={styles.button} onPress={() => props.navigation.navigate('Temas')}>

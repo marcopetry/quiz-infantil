@@ -10,8 +10,8 @@ import logo from '../assets/logo.png';
 
 global.portugues = 0;
 global.matematica = 0;
-global.quimica = 0;
-global.historia = 0;
+global.ingles = 0;
+global.personagens = 0;
 
 export default function Inicio({ navigation }) {
 

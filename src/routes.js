@@ -3,16 +3,19 @@ import { createStackNavigator } from 'react-navigation-stack';
 
 import Temas from './pages/Temas';
 import Inicio from './pages/Inicio';
-import TelamTemas from './pages/TelaTemas';
+import TelaTemas from './pages/TelaTemas';
 import Perguntas from './pages/Perguntas';
 import ControllersPerguntas from './controllers/ControllersPerguntas';
+import Scores from './pages/Scores';
 
 const Routes = createAppContainer(
   createStackNavigator({
     Inicio: {
-      screen: Inicio,
+      screen: Scores,
+      //screen: Inicio,
       navigationOptions: {
-        header: null,
+        title: 'Scores'
+        //header: null,
       },
     },
     Temas: {
@@ -22,7 +25,7 @@ const Routes = createAppContainer(
       },
     },
     TelaTemas: {
-      screen: TelamTemas,
+      screen: TelaTemas,
       navigationOptions: {
         title: 'Temas'
       }
@@ -31,6 +34,12 @@ const Routes = createAppContainer(
       screen: ControllersPerguntas,
       navigationOptions: {
         title: 'Perguntas'
+      }
+    },
+    Scores: {
+      screen: Scores,
+      navigationOptions: {
+        title: 'Scores'
       }
     }
   }, {

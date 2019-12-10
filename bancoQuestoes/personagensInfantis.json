@@ -1,0 +1,213 @@
+{
+    "questoes": [
+        {
+            "enunciado": "Quem é chamado de Tesouro pela mãe?",
+            "alternativas": [
+                "Kiko.", 
+                "Menino Maluquinho.", 
+                "Daniel Zapata.",
+                "Michael Kile.", 
+                "Patrick Estrela.", 
+                "Chaves", 
+                "Chiquinha.", 
+                "Senhor Barriga."
+            ]
+        },
+
+        {
+            "enunciado": "De qual personagem é a famosa frase'Isso é tão romântico?'",
+            "alternativas": [
+                "Laura.",
+                "Lúcia.",  
+                "Valéria.", 
+                "Carmen.", 
+                "Bibi.", 
+                "Maria Joaquina.", 
+                "Suzana.", 
+                "Letícia."
+            ]
+        },
+
+        {
+            "enunciado": "Qual personagem do seriado 'Bob Esponja Calça Quadrada' só pensa em dinheiro?",
+            "alternativas": [
+                "Seu Sirigueijo.", 
+                "Lula Molusco.", 
+                "Bob Esponja.", 
+                "Patrick Estrela.", 
+                "Pérola.", 
+                "Fred Flinstone.", 
+                "Menino Maluquinho.", 
+                "Sandy."
+            ]
+        },
+
+        {
+            "enunciado": "Quem gosta de usar uma panela na cabeça?",
+            "alternativas": [
+                "Menino Maluquinho.", 
+                "Fred Flinstone.", 
+                "Bart Simpson.", 
+                "George Jetson.", 
+                "Chris.", 
+                "Bob Esponja.", 
+                "Cascão.", 
+                "Mônica."
+            ]
+        },
+
+        {
+            "enunciado": "Qual personagem tem um cabelo grande e azul?",
+            "alternativas": [
+                "Marge Simpson.", 
+                "Moranguinho.", 
+                "Hello Kitty.", 
+                "Rochelle.", 
+                "É impossível que alguém tenha o cabelo azul.", 
+                "Lisa Simpson.", 
+                "Ben 10.", 
+                "Mônica."
+            ]
+        },
+
+        {
+            "enunciado": "Na série Futurama, qual o nomde do robô?",
+            "alternativas": [
+                "Bender.",
+                "Fry.",
+                "Turanga.", 
+                "Amy.", 
+                "Hubert.", 
+                "Zapp.", 
+                "Kif.", 
+                "Hermes."
+            ]
+        },
+
+        {
+            "enunciado": "Qual é o personagem que vive correndo para não virar comida?",
+            "alternativas": [
+                "Jerry.", 
+                "Mickey.", 
+                "Tom.", 
+                "Pica Pau.", 
+                "Coiote.", 
+                "Perna Longa.", 
+                "Patolino.", 
+                "Lola."
+            ]
+        },
+
+        {
+            "enunciado": "Qual é o personagem mais rapido dos desenhos animados?",
+            "alternativas": [
+                "Papa-Léguas.", 
+                "Tyrone.", 
+                "Sid.", 
+                "Pica Pau.", 
+                "Dona Benta.", 
+                "Perna-Longa.", 
+                "Patolino.", 
+                "Lola."
+            ]
+        },
+
+        {
+            "enunciado": "Qual personagem é muito conhecido por sua risada?",
+            "alternativas": [
+                "Pica-Pau.",
+                "Perna-Longa.", 
+                "Papa-Léguas.", 
+                "Tyrone.", 
+                "Sid.", 
+                "Dona Benta.", 
+                "Patolino.", 
+                "Lola."
+            ]
+        },
+
+        {
+            "enunciado": "Quem é a bonequinha de pano mais espevitada dos desenhos animados?",
+            "alternativas": [
+                "Emília.",
+                "Anabelle",
+                "Barbie.", 
+                "Moranguinho.", 
+                "Hello Kitty.", 
+                "Sid.", 
+                "Dona Benta.", 
+                "Patolino."
+            ]
+        },
+
+        {
+            "enunciado": "Quem é a bonequinha de pano mais espevitada dos desenhos animados?",
+            "alternativas": [
+                "Emília.",
+                "Anabelle",
+                "Barbie.", 
+                "Moranguinho.", 
+                "Hello Kitty.", 
+                "Sid.", 
+                "Dona Benta.", 
+                "Patolino."
+            ]
+        },
+
+        {
+            "enunciado": "Quem é o personagem mais chato do desenho 'Bob Esponja Calça Quadrada'?",
+            "alternativas": [
+                "Lula Molusco.",
+                "Seu Sirigueijo.", 
+                "Bob Esponja.", 
+                "Patrick Estrela.", 
+                "Pérola.", 
+                "Fred Flinstone.", 
+                "Menino Maluquinho.", 
+                "Sandy."
+            ]
+        },
+
+        {
+            "enunciado": "Quantos são e como se chamam os sobrinhos do Pica-Pau?",
+            "alternativas": [
+                "São dois e se chamam Toquinho e Lasquita.",
+                "São dois e se chamam Picolinho e Chiquita.", 
+                "São três e se chamam Huguinho, Zezinho e Luizinho.", 
+                "São quatro e se chamam Pintinho, Luizinho, Zezinho, Toquinho.", 
+                "São cinco e se chamam Pedrinho, Pauzinho, Pintinho, Picolinho e Lasquita.", 
+                "São três e se chamam Zezinho, Toquinho e Luizinho.", 
+                "São três e se chamam Zezinho, Toquinho e Picolinho.", 
+                "São três e se chamam Zezinho, Toquinho e Lasquita."
+            ]
+        },
+
+        {
+            "enunciado": "O maior vilão da série de desenhos Pica-Pau é o Zeca Urubu. Que ave é o Zeca, hein?",
+            "alternativas": [
+                "Abutre.",
+                "Urubu.", 
+                "Coruja.", 
+                "Tucano.", 
+                "Canário.", 
+                "Pardal.", 
+                "Pombo.", 
+                "Tuiuiu."
+            ]
+        },
+
+        {
+            "enunciado": "O Pica-Pau é personagem do que?",
+            "alternativas": [
+                "De desenho animado.", 
+                "De algum filme.",
+                "De quadrinhos.", 
+                "De novelas.", 
+                "De séries.", 
+                "De televisão.", 
+                "De mangá.", 
+                "De teatro."
+            ]
+        }
+    ]
+}

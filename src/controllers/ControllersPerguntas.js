@@ -16,19 +16,17 @@ export default function ControllersPerguntas({ navigation }) {
     useEffect(() => {
         if (contador < 5)
             setAlternativas(sortearRespostas(questoes.questoes[indicesQuestoes[contador]].alternativas));
-        else {
-            if (materia === 'portugues')
-                global.portugues += totalRespostasCorretas;
-            else if (materia === 'matematica')
-                global.matematica += totalRespostasCorretas;
-            else if (materia === 'quimica')
-                global.quimica += totalRespostasCorretas;
-            else if (materia === 'historia')
-                global.historia += totalRespostasCorretas;
-        }
     }, [contador]);
 
     if (contador === 5) {
+        if (materia === 'portugues')
+            global.portugues += totalRespostasCorretas;
+        else if (materia === 'matematica')
+            global.matematica += totalRespostasCorretas;
+        else if (materia === 'ingles')
+            global.ingles += totalRespostasCorretas;
+        else if (materia === 'historia')
+            global.personagens += totalRespostasCorretas;
         return <Scores navigation={navigation} />
     }
 

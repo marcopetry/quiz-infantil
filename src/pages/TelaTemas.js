@@ -7,6 +7,8 @@ import personagens from '../assets/personagens-icon.png';
 import ingles from '../assets/ingles-icon.png';
 import questoesPortugues from '../../bancoQuestoes/portugues.json';
 import questoesMatematica from '../../bancoQuestoes/matematica.json';
+import questoesIngles from '../../bancoQuestoes/ingles.json';
+import questoesPersonagens from '../../bancoQuestoes/personagensInfantis.json'
 
 let marginTelaTemas = 5;
 let marginTopTelaGrande = 5;
@@ -37,13 +39,13 @@ export default function TelaTemas({ navigation }) {
                     </TouchableOpacity>
                 </View>
                 <View style={[styles.viewsIcons, {marginTop: marginTopTelaGrande}]}>
-                    <TouchableOpacity onPress={() => navigation.navigate('Perguntas', { questoes: questoesPortugues, materia: 'quimica' })}>
+                    <TouchableOpacity onPress={() => navigation.navigate('Perguntas', { questoes: questoesIngles, materia: 'ingles' })}>
                         <View style={styles.viewImage}>
                             <Image source={ingles} style={styles.image} />
                             <Text>Inglês</Text>
                         </View>
                     </TouchableOpacity>
-                    <TouchableOpacity onPress={() => navigation.navigate('Perguntas', { questoes: questoesPortugues, materia: 'historia' })}>
+                    <TouchableOpacity onPress={() => navigation.navigate('Perguntas', { questoes: questoesPersonagens, materia: 'personagens' })}>
                         <View style={styles.viewImage}>
                             <Image source={personagens} style={styles.image} />
                             <Text>Personagens</Text>

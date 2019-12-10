@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import Perguntas from '../pages/Perguntas';
 import { sortearQuestoes } from '../helpers/sortearQuestoes';
 import { sortearRespostas } from '../helpers/sortearRespostas';
-import { Text } from 'react-native';
 import Scores from '../pages/Scores';
 
 const indicesQuestoes = sortearQuestoes();
@@ -16,34 +15,34 @@ export default function ControllersPerguntas({ navigation }) {
     useEffect(() => {
         if (contador < 5)
             setAlternativas(sortearRespostas(questoes.questoes[indicesQuestoes[contador]].alternativas));
+        else {
+            if (materia === 'portugues')
+                global.portugues += totalRespostasCorretas;
+            else if (materia === 'matematica')
+                global.matematica += totalRespostasCorretas;
+            else if (materia === 'quimica')
+                global.quimica += totalRespostasCorretas;
+            else if (materia === 'historia')
+                global.historia += totalRespostasCorretas;
+        }
     }, [contador]);
 
     if (contador === 5) {
-        
-        if(materia === 'portugues')
-            global.portugues +=totalRespostasCorretas;
-        else if(materia === 'matematica')
-            global.matematica += totalRespostasCorretas;
-        else if(materia === 'quimica')
-            global.quimica += totalRespostasCorretas;
-        else if(materia === 'historia')
-            global.historia += totalRespostasCorretas;
-        
+        return navigation.navigate('Scores');
+    }
+    else {
         return (
-            <Scores navigation={navigation}/>
+            <Perguntas
+                enunciado={questoes.questoes[indicesQuestoes[contador]].enunciado}
+                alternativa={alternativas}
+                correta={questoes.questoes[indicesQuestoes[contador]].alternativas[0]}
+                passarPergunta={() => setContador(contador + 1)}
+                adicionarPontoRespostaCorreta={() => setTotalRespostasCorretas(totalRespostasCorretas + 1)}
+                contador={contador}
+            />
         );
+
     }
 
-    return (
-
-        <Perguntas
-            enunciado={questoes.questoes[indicesQuestoes[contador]].enunciado}
-            alternativa={alternativas}
-            correta={questoes.questoes[indicesQuestoes[contador]].alternativas[0]}
-            passarPergunta={() => setContador(contador + 1)}
-            adicionarPontoRespostaCorreta={() => setTotalRespostasCorretas(totalRespostasCorretas + 1)}
-            contador={contador}
-        />
-    );
 }
 

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Text, ImageBackground, View, StyleSheet } from 'react-native';
 import fundoTela from '../assets/backgroundInicio.png';
 import { ScrollView, TouchableOpacity } from 'react-native-gesture-handler';
+import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen';
 
 export default function Perguntas(props) {
     const [primeiraResposta, setPrimeiraResposta] = useState('#339BA1'),
@@ -58,35 +59,31 @@ export default function Perguntas(props) {
         <ImageBackground source={fundoTela} style={{ width: '100%', height: '100%' }}>
             <ScrollView>
                 <View style={styles.container}>
-                    <View style={styles.viewText} >
-                        <Text style={[styles.text, styles.header]}>Pergunta {(props.contador + 1)}:</Text>
-                        <Text style={styles.text}>{props.enunciado}</Text>
+                    <View style={[styles.viewText]} >
+                        <Text style={styles.header}>Pergunta {(props.contador + 1)}:</Text>
+                        <Text style={[styles.text, styles.pergunta]}>{props.enunciado}</Text>
                     </View>
 
-                    <View style={[styles.viewText, { backgroundColor: primeiraResposta }]} >
-                        <TouchableOpacity onPress={() => escolheuResposta(props.alternativa[0], 0)}>
-                            <Text style={[styles.text, styles.header]}>Alternativa 1:</Text>
+                    <View style={[styles.viewText]} >
+                        <TouchableOpacity style={[styles.viewRespostas, { backgroundColor: primeiraResposta }]} onPress={() => escolheuResposta(props.alternativa[0], 0)}>
                             <Text style={styles.text} >{props.alternativa[0]}</Text>
                         </TouchableOpacity>
                     </View>
 
-                    <View style={[styles.viewText, { backgroundColor: segundaResposta }]}>
-                        <TouchableOpacity onPress={() => escolheuResposta(props.alternativa[1], 1)}>
-                            <Text style={[styles.text, styles.header]}>Alternativa 2:</Text>
-                            <Text style={styles.text}>{props.alternativa[1]}</Text>
+                    <View style={[styles.viewText]}>
+                        <TouchableOpacity style={[styles.viewRespostas, { backgroundColor: segundaResposta }]} onPress={() => escolheuResposta(props.alternativa[1], 1)}>
+                            <Text style={[styles.text]}>{props.alternativa[1]}</Text>
                         </TouchableOpacity>
                     </View>
 
-                    <View style={[styles.viewText, { backgroundColor: terceiraResposta }]}>
-                        <TouchableOpacity onPress={() => escolheuResposta(props.alternativa[2], 2)}>
-                            <Text style={[styles.text, styles.header]}>Alternativa 3:</Text>
-                            <Text style={styles.text}>{props.alternativa[2]}</Text>
+                    <View style={[styles.viewText]}>
+                        <TouchableOpacity style={[styles.viewRespostas, { backgroundColor: terceiraResposta }]} onPress={() => escolheuResposta(props.alternativa[2], 2)}>
+                            <Text style={[styles.text, styles.resposta]}>{props.alternativa[2]}</Text>
                         </TouchableOpacity>
                     </View>
 
-                    <View style={[styles.viewText, { backgroundColor: quartaResposta }]}>
-                        <TouchableOpacity onPress={() => escolheuResposta(props.alternativa[3], 3)}>
-                            <Text style={[styles.text, styles.header]}>Alternativa 4:</Text>
+                    <View style={[styles.viewText]}>
+                        <TouchableOpacity style={[styles.viewRespostas, { backgroundColor: quartaResposta }]} onPress={() => escolheuResposta(props.alternativa[3], 3)}>
                             <Text style={styles.text}>{props.alternativa[3]}</Text>
                         </TouchableOpacity>
                     </View>
@@ -102,36 +99,40 @@ const styles = StyleSheet.create({
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
-        marginVertical: 50,
-        width: '100%'
-    },
-
-    viewText: {
-        width: '80%',
-        backgroundColor: '#339BA1',
+        alignSelf: 'center',
+        alignContent: 'center',
         marginVertical: 20,
+        width: wp('80%'),
         borderRadius: 10
     },
 
+    viewText: {
+        display: 'flex',
+        flexDirection: 'column',
+        width: '80%',
+        marginVertical: 5,
+        borderRadius: 10
+    },
+
+    viewRespostas: {
+        display: 'flex',
+        flexDirection: 'row',
+        width: '100%',
+        borderRadius: 10,
+    },
+
     header: {
+        marginLeft: 15,
+        marginBottom: 5
+    },
+
+    pergunta: {
         backgroundColor: '#fff',
-        width: 100,
-        margin: 5,
-        padding: 3,
-        borderRadius: 5,
-        paddingLeft: 5
+        borderRadius: 10,
+        marginTop: 5
     },
 
     text: {
-        padding: 10,
-        //fontFamily: 'Roboto-Light'
+        padding: 15,
     },
-
-    fundoRespostaErrada: {
-        backgroundColor: '#E65B6B'
-    },
-
-    fundoRespostaCerta: {
-        backgroundColor: '#93E9ED'
-    }
 });

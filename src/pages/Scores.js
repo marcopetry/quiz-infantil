@@ -6,7 +6,6 @@ import fundoTela from '../assets/backgroundInicio.png';
 export default function Scores(props) {
 
     return (
-
         <ImageBackground source={fundoTela} style={{ width: '100%', height: '100%' }}>
             <ScrollView >
                 <View style={styles.container}>
@@ -51,10 +50,11 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         width: '80%',
         justifyContent: 'space-between',
-        marginVertical: 15,
+        marginVertical: 10,
         borderWidth: 1,
         borderRadius: 10,
-        padding: 10
+        padding: 10, 
+        backgroundColor: 'rgba(245, 245, 245, 0.5)',
     },
 
     textScores: {

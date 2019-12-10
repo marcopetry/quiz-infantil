@@ -28,6 +28,12 @@ const Routes = createAppContainer(
         title: 'Perguntas'
       }
     },
+    Scores: {
+      screen: Scores,
+      navigationOptions: {
+        title: 'Scores'
+      }
+    },
   }, {
     defaultNavigationOptions: {
       headerTintColor: '#FFF',

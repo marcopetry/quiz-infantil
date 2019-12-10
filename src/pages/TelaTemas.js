@@ -1,41 +1,42 @@
 import React from 'react';
 import { Text, View, Image, StyleSheet } from 'react-native';
 import { ScrollView, TouchableOpacity } from 'react-native-gesture-handler';
+
 import matematica from '../assets/icon-matematica.png';
 import portugues from '../assets/icon-portugues.png';
 import historia from '../assets/icon-historia.png';
 import quimica from '../assets/icon-quimica.png';
 import questoesPortugues from '../../bancoQuestoes/portugues.json';
 
-export default function TelaTemas({navigation}) {
-    
+export default function TelaTemas({ navigation }) {
+
     return (
-        <ScrollView style={styles.scroll}>
+        <ScrollView>
             <View style={styles.container}>
                 <View style={styles.viewsIcons}>
-                    <TouchableOpacity onPress={() => navigation.navigate('Perguntas', {questoes: questoesPortugues, materia: 'portugues'})}>
+                    <TouchableOpacity onPress={() => navigation.navigate('Perguntas', { questoes: questoesPortugues, materia: 'portugues' })}>
                         <View style={styles.viewImage}>
-                            <Image source={portugues} style={styles.image}/>
+                            <Image source={portugues} style={styles.image} />
                             <Text>Português</Text>
                         </View>
                     </TouchableOpacity>
-                    <TouchableOpacity onPress={() => navigation.navigate('Perguntas', {questoes: questoesPortugues, materia: ',matematica'})}>
+                    <TouchableOpacity onPress={() => navigation.navigate('Perguntas', { questoes: questoesPortugues, materia: ',matematica' })}>
                         <View style={styles.viewImage}>
-                            <Image source={matematica} style={styles.image}/>
+                            <Image source={matematica} style={styles.image} />
                             <Text>Matemática</Text>
                         </View>
                     </TouchableOpacity>
                 </View>
                 <View style={styles.viewsIcons}>
-                    <TouchableOpacity onPress={() => navigation.navigate('Perguntas', {questoes: questoesPortugues, materia: 'quimica'})}>
+                    <TouchableOpacity onPress={() => navigation.navigate('Perguntas', { questoes: questoesPortugues, materia: 'quimica' })}>
                         <View style={styles.viewImage}>
-                            <Image source={quimica} style={styles.image}/>
+                            <Image source={quimica} style={styles.image} />
                             <Text>Química</Text>
                         </View>
                     </TouchableOpacity>
-                    <TouchableOpacity onPress={() => navigation.navigate('Perguntas', {questoes: questoesPortugues, materia: 'historia'})}>
+                    <TouchableOpacity onPress={() => navigation.navigate('Perguntas', { questoes: questoesPortugues, materia: 'historia' })}>
                         <View style={styles.viewImage}>
-                            <Image source={historia} style={styles.image}/>
+                            <Image source={historia} style={styles.image} />
                             <Text>História</Text>
                         </View>
                     </TouchableOpacity>
@@ -49,28 +50,29 @@ const styles = StyleSheet.create({
 
     container: {
         display: 'flex',
-        marginVertical: 40
+        flexDirection: 'column',
+        justifyContent: 'flex-end',
+        //marginVertical: hp('5%')
     },
 
     viewsIcons: {
         display: 'flex',
-        flex: 1,
         flexDirection: 'row',
         justifyContent: 'space-around',
         alignItems: 'center',
-        marginVertical: 10
+        marginVertical: 5
     },
 
     viewImage: {
         display: 'flex',
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
     },
 
     image: {
-        width: 150,
-        height: 150,
-        marginBottom: 10
-    },  
+        width: 100,
+        height: 100,
+        marginBottom: 5
+    },
 
 });

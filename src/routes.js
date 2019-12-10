@@ -1,7 +1,6 @@
 import { createAppContainer } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
 
-import Temas from './pages/Temas';
 import Inicio from './pages/Inicio';
 import TelaTemas from './pages/TelaTemas';
 import Perguntas from './pages/Perguntas';

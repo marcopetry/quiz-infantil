@@ -11,9 +11,7 @@ export default function ControllersPerguntas({ navigation }) {
         [contador, setContador] = useState(0),
         [alternativas, setAlternativas] = useState([]),
         [totalRespostasCorretas, setTotalRespostasCorretas] = useState(0),
-        [placar, setPlacar] = useState(navigation.getParam('placar'));
-
-    console.log(placar);
+        [materia, setMateria] = useState(navigation.getParam('materia'));
 
     useEffect(() => {
         if (contador < 5)
@@ -21,7 +19,16 @@ export default function ControllersPerguntas({ navigation }) {
     }, [contador]);
 
     if (contador === 5) {
-        global.portugues +=totalRespostasCorretas;
+        
+        if(materia === 'portugues')
+            global.portugues +=totalRespostasCorretas;
+        else if(materia === 'matematica')
+            global.matematica += totalRespostasCorretas;
+        else if(materia === 'quimica')
+            global.quimica += totalRespostasCorretas;
+        else if(materia === 'historia')
+            global.historia += totalRespostasCorretas;
+        
         return (
             <Scores navigation={navigation}/>
         );

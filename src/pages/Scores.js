@@ -1,32 +1,38 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
-import { TouchableOpacity } from 'react-native-gesture-handler';
+import { View, Text, StyleSheet, ImageBackground } from 'react-native';
+import { TouchableOpacity, ScrollView } from 'react-native-gesture-handler';
+import fundoTela from '../assets/backgroundInicio.png';
 
 export default function Scores(props) {
 
     return (
-        <View style={styles.container}>
-            <Text>Scores:</Text>
-            <View style={styles.viewScores}>
-                <Text>Português: </Text>
-                <Text>{global.portugues}</Text>
-            </View>
-            <View style={styles.viewScores}>
-                <Text>Matemática: </Text>
-                <Text>{global.matematica}</Text>
-            </View>
-            <View style={styles.viewScores}>
-                <Text>Química: </Text>
-                <Text>{global.quimica}</Text>
-            </View>
-            <View style={styles.viewScores}>
-                <Text>História: </Text>
-                <Text>{global.historia}</Text>
-            </View>
-            <TouchableOpacity style={styles.button} onPress={() => props.navigation.navigate('Temas')}>
-                <Text>Início</Text>
-            </TouchableOpacity>
-        </View>
+
+        <ImageBackground source={fundoTela} style={{ width: '100%', height: '100%' }}>
+            <ScrollView >
+                <View style={styles.container}>
+                    <Text style={styles.textScores}>Scores:</Text>
+                    <View style={styles.viewScores}>
+                        <Text>Português: </Text>
+                        <Text>{global.portugues}</Text>
+                    </View>
+                    <View style={styles.viewScores}>
+                        <Text>Matemática: </Text>
+                        <Text>{global.matematica}</Text>
+                    </View>
+                    <View style={styles.viewScores}>
+                        <Text>Química: </Text>
+                        <Text>{global.quimica}</Text>
+                    </View>
+                    <View style={styles.viewScores}>
+                        <Text>História: </Text>
+                        <Text>{global.historia}</Text>
+                    </View>
+                    <TouchableOpacity style={styles.button} onPress={() => props.navigation.navigate('Temas')}>
+                        <Text>Início</Text>
+                    </TouchableOpacity>
+                </View>
+            </ScrollView>
+        </ImageBackground>
     );
 }
 
@@ -34,8 +40,7 @@ const styles = StyleSheet.create({
     container: {
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#93E9ED',
-        height: '100%'
+        marginTop: 20
     },
 
     viewScores: {
@@ -43,10 +48,14 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         width: 700,
         justifyContent: 'space-between',
-        marginVertical: 20,
+        marginVertical: 15,
         borderWidth: 1,
         borderRadius: 10,
         padding: 10
+    },
+
+    textScores: {
+        fontSize: 50
     },
 
     button: {

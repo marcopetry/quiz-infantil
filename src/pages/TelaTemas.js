@@ -19,7 +19,7 @@ export default function TelaTemas({navigation}) {
                             <Text>Português</Text>
                         </View>
                     </TouchableOpacity>
-                    <TouchableOpacity>
+                    <TouchableOpacity onPress={() => navigation.navigate('Perguntas', {questoes: questoesPortugues, materia: ',matematica'})}>
                         <View style={styles.viewImage}>
                             <Image source={matematica} style={styles.image}/>
                             <Text>Matemática</Text>
@@ -27,13 +27,13 @@ export default function TelaTemas({navigation}) {
                     </TouchableOpacity>
                 </View>
                 <View style={styles.viewsIcons}>
-                    <TouchableOpacity>
+                    <TouchableOpacity onPress={() => navigation.navigate('Perguntas', {questoes: questoesPortugues, materia: 'quimica'})}>
                         <View style={styles.viewImage}>
                             <Image source={quimica} style={styles.image}/>
                             <Text>Química</Text>
                         </View>
                     </TouchableOpacity>
-                    <TouchableOpacity>
+                    <TouchableOpacity onPress={() => navigation.navigate('Perguntas', {questoes: questoesPortugues, materia: 'historia'})}>
                         <View style={styles.viewImage}>
                             <Image source={historia} style={styles.image}/>
                             <Text>História</Text>
@@ -46,12 +46,10 @@ export default function TelaTemas({navigation}) {
 }
 
 const styles = StyleSheet.create({
-    scroll: {
-    },
 
     container: {
         display: 'flex',
-        marginVertical: 50
+        marginVertical: 40
     },
 
     viewsIcons: {

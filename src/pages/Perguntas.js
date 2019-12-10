@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Text, ImageBackground, View, StyleSheet } from 'react-native';
 import fundoTela from '../assets/backgroundInicio.png';
-import { ScrollView, TouchableOpacity, TouchableHighlight } from 'react-native-gesture-handler';
+import { ScrollView, TouchableOpacity } from 'react-native-gesture-handler';
 
 export default function Perguntas(props) {
     const [primeiraResposta, setPrimeiraResposta] = useState('#339BA1'),
